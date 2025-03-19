@@ -29,7 +29,7 @@ A **scalable and feature-rich E-Commerce API** built with **Node.js, Express, an
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/AboEl3iz/Ecommerce-Api.git
    cd your-repo
    ```
 2. **Install dependencies:**
@@ -60,10 +60,10 @@ A **scalable and feature-rich E-Commerce API** built with **Node.js, Express, an
 ## 👤 User Management
 | Method | Endpoint          | Access  | Description |
 |--------|------------------|---------|-------------|
-| GET    | `/api/users/`    | Admin   | Get all users |
-| GET    | `/api/users/me`  | User    | Get own profile |
-| PATCH  | `/api/users/me`  | User    | Update own profile |
-| DELETE | `/api/users/me`  | User    | Delete own account |
+| GET    | `/api/users`    | Admin   | Get all users |
+| GET    | `/api/users/profile`  | User    | Get own profile |
+| PATCH  | `/api/users`  | User    | Update own profile |
+| DELETE | `/api/users`  | User    | Delete own account |
 
 ---
 
@@ -71,7 +71,7 @@ A **scalable and feature-rich E-Commerce API** built with **Node.js, Express, an
 | Method | Endpoint            | Access | Description |
 |--------|---------------------|--------|-------------|
 | POST   | `/api/products/`    | Admin  | Add a new product |
-| PATCH  | `/api/products/:id` | Admin  | Update product details |
+| PUT  | `/api/products/:id` | Admin  | Update product details |
 | DELETE | `/api/products/:id` | Admin  | Delete a product |
 | GET    | `/api/products/`    | Public | Get all products (with pagination) |
 | GET    | `/api/products/:id` | Public | Get product details |
@@ -111,7 +111,7 @@ A **scalable and feature-rich E-Commerce API** built with **Node.js, Express, an
 | POST   | `/api/orders/`       | User   | Place a new order |
 | GET    | `/api/orders/`       | User   | Get all user orders |
 | DELETE | `/api/orders/:id`    | User   | Cancel an order |
-| PATCH  | `/api/orders/:id`    | Admin  | Change order status (Pending → Shipped → Delivered) |
+| PUT  | `/api/orders/:id`    | Admin  | Change order status (Pending → Shipped → Delivered) |
 
 ---
 
@@ -151,13 +151,6 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 
 ---
 
-## 📄 License
 
-This project is licensed under the **MIT License**.
-
----
-
-## ⭐ Show Some Love
-If you found this project useful, please give it a ⭐ on GitHub! 😊
 
 
